@@ -25,6 +25,14 @@ Specifying a specific stream:
       , Log = require('log')
       , log = new Log(Log.DEBUG, fs.createWriteStream('my.log'));
 
+Specifying a specific date logging (in epoch milliseconds):
+    var Log = require('log')
+      , log = new Log(Log.DEBUG, process.stdout, { write: function(date) {
+        return Date.getTime();
+      }, read: function(s) {
+        return new Date(parseInt(s, 10));
+      }});  
+
 Instead of the log level constants, you may also supply a string:
 
     var Log = require('log')
