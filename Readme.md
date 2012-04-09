@@ -33,6 +33,16 @@ Instead of the log level constants, you may also supply a string:
  We can also use `%s` much like `console.log()` to pass arguments:
  
      log.error('oh no, failed to send mail to %s.', user.email);
+     
+When using file stream, you can specify rotation-time (as hour-of-the-day in 24hrs format) to rotate the log file:
+
+	var fs = require('fs')
+      , Log = require('log')
+	var stream = fs.createWriteStream('/path/to/my-node.log');
+	var log = new Log('debug', stream, {rotate:true, rotationTime:23});
+	
+This will emit `rotate` event at the specified hour of the day. In the above example, `rotate` event will be emitted at 11:00 PM.
+You need to handle `rotate` event to actually rotate the file. An example is provided here: `examples\file-rotate.js`.
 
 ## Reader
 
