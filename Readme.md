@@ -61,6 +61,23 @@ Setting up our own colors :
         'INFO'      : "\033[0;35m",
         'DEBUG'     : "\033[0m"
     })
+    
+Setting up your own log levels:
+
+    log.customLevels([ 'COMMAND', 'DATA' ] );
+
+Which will simple add methods `command` and `data` to the `Log` object, and you can use them as the way that default log methods be used, like `log.command( "a command message")`.
+
+Also, you can setting up your own log levels and their colors at the same time:
+
+	log.customLevels({
+		COMMAND: '\033[0;31m',
+		DATA: '\033[0;31m'
+	});
+
+
+
+
 
 ## Reader
 
