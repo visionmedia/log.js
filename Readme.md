@@ -34,6 +34,51 @@ Instead of the log level constants, you may also supply a string:
  
      log.error('oh no, failed to send mail to %s.', user.email);
 
+Turn colors on:
+
+    log.colorful();
+
+Turn colors off:
+
+    log.colorful(false);
+
+Setting up our own colors : 
+
+    log.colorful({
+        'EMERGENCY' : "\033[0;31m",
+        'ALERT'     : "\033[0;33m",
+        'CRITICAL'  : "\033[0;31m",
+        'ERROR'     : "\033[1;31m",
+        'WARNING'   : "\033[0;33m",
+        'NOTICE'    : "\033[0;36m",
+        'INFO'      : "\033[0;35m",
+        'DEBUG'     : "\033[0m"
+    });
+
+    You don't have to specify all levels, when defining colors, if you only want to specify certain levels, you just write those:
+
+    log.colorful({
+        'INFO'      : "\033[0;35m",
+        'DEBUG'     : "\033[0m"
+    })
+    
+Setting up your own log levels:
+
+    log.customLevels([ 'COMMAND', 'DATA' ] );
+
+Which will simple add methods `command` and `data` to the `Log` object, and you can use them as the way that default log methods be used, like `log.command( "a command message")`.
+
+Also, you can setting up your own log levels and their colors at the same time:
+
+	log.customLevels({
+		COMMAND: '\033[0;31m',
+		DATA: '\033[0;31m'
+	});
+
+
+
+
+
 ## Reader
 
  To stream a log, simply pass a readable stream instead of a writable:
