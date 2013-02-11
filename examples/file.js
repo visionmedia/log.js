@@ -3,10 +3,21 @@
  * Module dependencies.
  */
 
-var Log = require('../lib/log')
-  , fs = require('fs')
-  , stream = fs.createWriteStream(__dirname + '/file.log', { flags: 'a' })
-  , log = new Log('debug', stream);
+var Log = require('../lib/log');
+var fs = require('fs');
+var stream = fs.createWriteStream(__dirname + '/file.log', { flags: 'a' });
+
+var logConfig = {
+    level: 'debug',
+    name: 'ngServer',
+    fileStream: stream,
+    consoleLogging: true,
+    colorConsoleLogging: true,
+    logMessagePattern: '[%d{ISO8601}] [%p] %c - %m{1}'
+};
+
+//var log = new Log('debug', stream);
+var log = new Log(logConfig);
 
 log.debug('a debug message');
 log.info('a info message');

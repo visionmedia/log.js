@@ -1,16 +1,32 @@
-[Sun, 26 Sep 2010 01:26:14 GMT] DEBUG a debug message
-[Sun, 26 Sep 2010 01:26:14 GMT] INFO a info message
-[Sun, 26 Sep 2010 01:26:14 GMT] NOTICE a notice message
-[Sun, 26 Sep 2010 01:26:14 GMT] WARNING a warning message
-[Sun, 26 Sep 2010 01:26:14 GMT] ERROR a error message
-[Sun, 26 Sep 2010 01:26:14 GMT] CRITICAL a critical message
-[Sun, 26 Sep 2010 01:26:14 GMT] ALERT a alert message
-[Sun, 26 Sep 2010 01:26:14 GMT] EMERGENCY a emergency message
-[Thu, 03 Feb 2011 04:54:39 GMT] DEBUG a debug message
-[Thu, 03 Feb 2011 04:54:39 GMT] INFO a info message
-[Thu, 03 Feb 2011 04:54:39 GMT] NOTICE a notice message
-[Thu, 03 Feb 2011 04:54:39 GMT] WARNING a warning message
-[Thu, 03 Feb 2011 04:54:39 GMT] ERROR a error message
-[Thu, 03 Feb 2011 04:54:39 GMT] CRITICAL a critical message
-[Thu, 03 Feb 2011 04:54:39 GMT] ALERT a alert message
-[Thu, 03 Feb 2011 04:54:39 GMT] EMERGENCY a emergency message
+[2013-02-10 16:38:20.890] [DEBUG] ngServer - a debug message
+[2013-02-10 16:38:20.894] [INFO] ngServer - a info message
+[2013-02-10 16:38:20.894] [NOTICE] ngServer - a notice message
+[2013-02-10 16:38:20.894] [WARNING] ngServer - a warning message
+[2013-02-10 16:38:20.895] [ERROR] ngServer - a error message
+[2013-02-10 16:38:20.895] [CRITICAL] ngServer - a critical message
+[2013-02-10 16:38:20.895] [ALERT] ngServer - a alert message
+[2013-02-10 16:38:20.896] [EMERGENCY] ngServer - a emergency message
+[2013-02-10 16:42:23.823] [DEBUG] ngServer - a debug message
+[2013-02-10 16:42:23.827] [INFO] ngServer - a info message
+[2013-02-10 16:42:23.827] [NOTICE] ngServer - a notice message
+[2013-02-10 16:42:23.827] [WARNING] ngServer - a warning message
+[2013-02-10 16:42:23.827] [ERROR] ngServer - a error message
+[2013-02-10 16:42:23.827] [CRITICAL] ngServer - a critical message
+[2013-02-10 16:42:23.828] [ALERT] ngServer - a alert message
+[2013-02-10 16:42:23.828] [EMERGENCY] ngServer - a emergency message
+[2013-02-10 16:51:44.963] [DEBUG] ngServer - a debug message
+[2013-02-10 16:51:44.966] [INFO] ngServer - a info message
+[2013-02-10 16:51:44.967] [NOTICE] ngServer - a notice message
+[2013-02-10 16:51:44.967] [WARNING] ngServer - a warning message
+[2013-02-10 16:51:44.967] [ERROR] ngServer - a error message
+[2013-02-10 16:51:44.967] [CRITICAL] ngServer - a critical message
+[2013-02-10 16:51:44.968] [ALERT] ngServer - a alert message
+[2013-02-10 16:51:44.968] [EMERGENCY] ngServer - a emergency message
+[2013-02-10 17:08:42.629] [DEBUG] ngServer - a debug message
+[2013-02-10 17:08:42.633] [INFO] ngServer - a info message
+[2013-02-10 17:08:42.633] [NOTICE] ngServer - a notice message
+[2013-02-10 17:08:42.633] [WARNING] ngServer - a warning message
+[2013-02-10 17:08:42.633] [ERROR] ngServer - a error message
+[2013-02-10 17:08:42.633] [CRITICAL] ngServer - a critical message
+[2013-02-10 17:08:42.634] [ALERT] ngServer - a alert message
+[2013-02-10 17:08:42.635] [EMERGENCY] ngServer - a emergency message
