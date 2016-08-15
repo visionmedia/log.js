@@ -8,19 +8,30 @@ Lightweight logging for [NodeJS](http://nodejs.org). Includes a streaming log re
 ```bash
 $ npm install log
 ```
+## Log Levels
 
+ Mirror that of syslog:
+ 
+  - `0` `EMERGENCY`   system unusable
+  - `1` `ALERT`       immediate action required
+  - `2` `CRITICAL`    condition critical
+  - `3` `ERROR`       condition error
+  - `4` `WARNING`     condition warning
+  - `5` `NOTICE`      condition normal, but significant 
+  - `6` `INFO`        a purely informational message
+  - `7` `DEBUG`       debugging information
 
 ## Example
 
 By default, a Log’s stream is `stdout`, and its log level defaults is `DEBUG`. 
 
-Instead of `DEBUG`,  let’s create a log with the `info` level:
+Instead of `DEBUG`,  let’s create a log with the `info` level.  This means that erorrs sent with a level lower than info will not be sent to the output stream:
 
 ```javascript
 var Log = require('log')
   , log = new Log('info');
 
-log.debug('preparing email');
+log.debug('preparing email'); //this will not appear, since debug is a lower log level than "info" 
 log.info('sending email');
 log.error('failed to send email');
 ```
@@ -78,19 +89,6 @@ Example output:
 , msg: 'a emergency message'
 }
 ```
-    
-## Log Levels
-
- Mirror that of syslog:
- 
-  - `0` `EMERGENCY`   system unusable
-  - `1` `ALERT`       immediate action required
-  - `2` `CRITICAL`    condition critical
-  - `3` `ERROR`       condition error
-  - `4` `WARNING`     condition warning
-  - `5` `NOTICE`      condition normal, but significant 
-  - `6` `INFO`        a purely informational message
-  - `7` `DEBUG`       debugging information
 
 ## License 
 
